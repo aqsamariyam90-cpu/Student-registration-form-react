@@ -115,6 +115,17 @@ button:hover {
     margin-bottom: 12px;
     line-height: 1.5;
 }
+input:not([type="radio"]),
+select {
+    color: #263750;
+    background-color: white;
+    font-size: 16px;
+    min-height: 44px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd5e1;
+    border-radius: 6px;
+}
 @media (max-width: 500px) {
     .app {
         padding: 22px 18px;
