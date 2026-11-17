@@ -57,7 +57,7 @@ function App() {
                         email: e.target.value
                     })}
                 />
-                <label>Phone </label>
+                <label>Phone No </label>
                 <input
                     type="tel"
                     placeholder="Enter your phone number"
