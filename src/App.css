@@ -38,13 +38,14 @@ form > label {
 input:not([type="radio"]),
 select {
     width: 100%;
-    padding: 12px 13px;
+    min-height: 44px;
+    padding: 12px;
+    color: #263750;
+    background-color: white;
     border: 1px solid #ccd5e1;
     border-radius: 6px;
-    font-size: 14px;
+    font-size: 16px;
     outline: none;
-    background-color: white;
-    transition: border-color 0.2s;
 }
 input:not([type="radio"]):focus,
 select:focus {
@@ -68,8 +69,26 @@ input::placeholder {
     font-size: 14px;
     cursor: pointer;
 }
-.gender-options input {
-    accent-color: #2563eb;
+.gender-options input[type="radio"] {
+    appearance: none;
+    width: 17px;
+    height: 17px;
+    border: 2px solid #2563eb;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+}
+.gender-options input[type="radio"]:checked::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #0f1012;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 button {
     padding: 13px;
@@ -81,7 +100,6 @@ button {
     font-weight: 600;
     cursor: pointer;
     margin-top: 10px;
-    transition: background-color 0.2s;
 }
 button:hover {
     background-color: #1d4ed8;
@@ -114,17 +132,6 @@ button:hover {
     font-size: 14px;
     margin-bottom: 12px;
     line-height: 1.5;
-}
-input:not([type="radio"]),
-select {
-    color: #263750;
-    background-color: white;
-    font-size: 16px;
-    min-height: 44px;
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccd5e1;
-    border-radius: 6px;
 }
 @media (max-width: 500px) {
     .app {
