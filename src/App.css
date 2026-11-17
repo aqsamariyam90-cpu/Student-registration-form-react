@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    background-color: #eaf0f7;
+    padding: 20px 0;
+}
+.app {
+    width: 90%;
+    max-width: 520px;
+    margin: 35px auto;
+    padding: 32px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(38, 55, 80, 0.10);
+}
+h1 {
+    text-align: center;
+    color: #263750;
+    font-size: 27px;
+    margin-bottom: 28px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form > label {
+    color: #263750;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 5px;
+    text-align: left;
+}
+input:not([type="radio"]),
+select {
+    width: 100%;
+    padding: 12px 13px;
+    border: 1px solid #ccd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    background-color: white;
+    transition: border-color 0.2s;
+}
+input:not([type="radio"]):focus,
+select:focus {
+    border-color: #0b0f16;
+}
+input::placeholder {
+    color: #9aa5b4;
+}
+.gender-options {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 5px 0 10px;
+}
+.gender-options label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #263750;
+    font-size: 14px;
+    cursor: pointer;
+}
+.gender-options input {
+    accent-color: #2563eb;
+}
+button {
+    padding: 13px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+button:hover {
+    background-color: #1d4ed8;
+}
+.error {
+    color: red;
+    background-color: #fff0f0;
+    padding: 11px;
+    border-radius: 6px;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+.student-details {
+    margin-top: 28px;
+    padding: 20px;
+    background-color: #eaf2ff;
+    border: 1px solid #d4e2f7;
+    border-radius: 8px;
+}
+.student-details h2 {
+    color: #263750;
+    font-size: 20px;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cbdaf0;
+}
+.student-details p {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+@media (max-width: 500px) {
+    .app {
+        padding: 22px 18px;
+        margin: 20px auto;
+    }
+    h1 {
+        font-size: 23px;
+    }
+    .gender-options {
+        gap: 15px;
+    }
+}
