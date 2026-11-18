@@ -17,7 +17,7 @@ function App() {
     });
     const [submittedStudent, setSubmittedStudent] = useState<Student | null>(null);
     const [error, setError] = useState("");
-    function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    function handleSubmit(event: React.SubmitEvent<HTMLFormElement>) {
         event.preventDefault();
         if (
             student.name.trim() === "" ||
